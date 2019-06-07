@@ -55,6 +55,7 @@ class HangmanGame(object):
         self.word = GuessWord(HangmanGame.select_random_word(self.words))
         self.previous_guesses = []
 
+    @staticmethod
     def select_random_word(list_of_words):
         if not list_of_words:
             raise InvalidListOfWordsException
